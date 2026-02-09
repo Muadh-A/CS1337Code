@@ -2,10 +2,18 @@
 
 using namespace std;
 
+int add(int num1, int num2);
+
 int main() {
+    int sum;
+    sum = add(3, 5);
+    cout << sum;
 
 }
 
+int add(int num1, int num2) {
+    return (num1 + num2);
+}
 
 // Goal: Understand that a function returns a value and main uses it.
 
