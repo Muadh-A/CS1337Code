@@ -3,7 +3,7 @@
 using namespace std;
 
 //prototype
-int binarySearch(int list[], int key, int low, int high);
+int binarySearch(int array[], int size, int value);
 
 // function main begins program execution
 int main() 
@@ -13,6 +13,8 @@ int main()
     int key, first = 0, last = 16;
     cout << "Enter the element to search: ";
     cin >> key;
+
+    binarySearch(list, 17, key);
     /*
     Enter your code for the function call
     if key is found output the following statement
@@ -22,9 +24,11 @@ int main()
 
 }
 
-int binarySearch(int list[], int key, int low, int high)
+int binarySearch(int array[], int size, int value)
 {
+    int count = 0;
+
     //write your code here and the two cout statements be inserted into your code whereever necessary
-    cout << "It takes " << count << " iterations to find the key " << key << endl;
-    cout << " After " << count << " iterations " << key << " is not found!" << endl;
+    cout << "It takes " << count << " iterations to find the key " << value << endl;
+    cout << " After " << count << " iterations " << value << " is not found!" << endl;
 }
