@@ -27,8 +27,11 @@ int main()
 int binarySearch(int array[], int size, int value)
 {
     int count = 0;
-
+    int low = 0;
+    int high = size - 1;
+    
     //write your code here and the two cout statements be inserted into your code whereever necessary
+
     cout << "It takes " << count << " iterations to find the key " << value << endl;
     cout << " After " << count << " iterations " << value << " is not found!" << endl;
 }
